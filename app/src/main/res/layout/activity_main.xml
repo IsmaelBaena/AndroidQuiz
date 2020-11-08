@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/app_background_color"
+    >
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_weight="0.70"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/question_text_color"
+        android:textStyle="bold"
+        tools:text="A ConstraintLayout is a example of a Layout"
+        android:textSize="25sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/progressing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:textColor="@color/progress_text_color"
+        tools:text="Question 1 out of 10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.4">
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/true_button"
+            android:background="@color/true_button_color"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/false_button"
+            android:background="@color/false_button_color"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
